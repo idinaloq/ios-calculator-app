@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -302,6 +303,47 @@
                             <constraint firstItem="DC3-Ia-6L7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vTI-88-p1o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="acButton" destination="ped-N8-JbY" id="GiH-UH-I7g"/>
+                        <outlet property="addButton" destination="sbh-wC-koF" id="IeK-yT-KWX"/>
+                        <outlet property="button0" destination="mSz-Y3-r5Z" id="dgN-20-WgD"/>
+                        <outlet property="button00" destination="sH6-8l-kje" id="7jk-9c-SaH"/>
+                        <outlet property="button1" destination="nCE-qB-NiN" id="aFv-PU-y1T"/>
+                        <outlet property="button2" destination="Rif-2S-UU2" id="7KT-9C-E3s"/>
+                        <outlet property="button3" destination="X8H-iH-tSd" id="OxU-kQ-PdQ"/>
+                        <outlet property="button4" destination="hQm-yz-XvG" id="RWa-bp-m41"/>
+                        <outlet property="button5" destination="vpW-df-OLm" id="Tv8-MG-2gk"/>
+                        <outlet property="button6" destination="OaY-Mw-CPv" id="UCb-Jk-BFz"/>
+                        <outlet property="button7" destination="L6z-2G-Gar" id="YAt-ay-6Q2"/>
+                        <outlet property="button8" destination="xgT-2D-A49" id="K9q-B3-SdT"/>
+                        <outlet property="button9" destination="zcj-xJ-ruw" id="9fz-wM-swa"/>
+                        <outlet property="ceButton" destination="RLD-dY-LOA" id="ODE-Bp-Zbb"/>
+                        <outlet property="currentOperandLabel" destination="HPC-iy-qdm" id="Gn9-pw-xwC"/>
+                        <outlet property="currentOperatorLabel" destination="HPC-iy-qdm" id="9wm-lb-Yy6"/>
+                        <outlet property="divideButton" destination="Tfz-eM-jll" id="xTE-kf-LeA"/>
+                        <outlet property="dotButton" destination="h8q-5h-bnb" id="zhN-4O-6ka"/>
+                        <outlet property="equalButton" destination="Daw-iX-Owl" id="v72-2q-Cp1"/>
+                        <outlet property="multiplyButton" destination="811-Pz-An6" id="A0C-Yj-xqy"/>
+                        <outlet property="reverseSignButton" destination="ows-U7-mNc" id="o1u-pI-4lx"/>
+                        <outlet property="subtractButton" destination="nTe-Sn-Pvd" id="V0R-sM-8aF"/>
+                        <outletCollection property="operatorButton" destination="Tfz-eM-jll" collectionClass="NSMutableArray" id="o5M-RK-F3u"/>
+                        <outletCollection property="operatorButton" destination="811-Pz-An6" collectionClass="NSMutableArray" id="HGJ-JM-quh"/>
+                        <outletCollection property="operatorButton" destination="nTe-Sn-Pvd" collectionClass="NSMutableArray" id="wsl-fo-ysp"/>
+                        <outletCollection property="operatorButton" destination="sbh-wC-koF" collectionClass="NSMutableArray" id="E24-on-iwO"/>
+                        <outletCollection property="operatorButton" destination="Daw-iX-Owl" collectionClass="NSMutableArray" id="xHD-gd-6pE"/>
+                        <outletCollection property="operandButton" destination="sH6-8l-kje" collectionClass="NSMutableArray" id="pIq-wc-Bdw"/>
+                        <outletCollection property="operandButton" destination="mSz-Y3-r5Z" collectionClass="NSMutableArray" id="vob-VR-tB4"/>
+                        <outletCollection property="operandButton" destination="h8q-5h-bnb" collectionClass="NSMutableArray" id="gqO-wf-gsQ"/>
+                        <outletCollection property="operandButton" destination="X8H-iH-tSd" collectionClass="NSMutableArray" id="a3h-gv-B5G"/>
+                        <outletCollection property="operandButton" destination="Rif-2S-UU2" collectionClass="NSMutableArray" id="Pcs-2i-HA2"/>
+                        <outletCollection property="operandButton" destination="nCE-qB-NiN" collectionClass="NSMutableArray" id="tQd-ZE-st6"/>
+                        <outletCollection property="operandButton" destination="OaY-Mw-CPv" collectionClass="NSMutableArray" id="b84-dv-veg"/>
+                        <outletCollection property="operandButton" destination="vpW-df-OLm" collectionClass="NSMutableArray" id="Sr8-6e-WZn"/>
+                        <outletCollection property="operandButton" destination="hQm-yz-XvG" collectionClass="NSMutableArray" id="bDA-vI-klX"/>
+                        <outletCollection property="operandButton" destination="zcj-xJ-ruw" collectionClass="NSMutableArray" id="hKC-Ck-H6T"/>
+                        <outletCollection property="operandButton" destination="xgT-2D-A49" collectionClass="NSMutableArray" id="F1T-Pp-Xwb"/>
+                        <outletCollection property="operandButton" destination="L6z-2G-Gar" collectionClass="NSMutableArray" id="HXQ-iM-nhL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
